@@ -1,5 +1,8 @@
 function allTheArgs(func, ...args) {
-  // Your code here 
+  return function(...moreArgs) {
+    return func.apply(null, args.concat(moreArgs))
+    
+  }
 }
 
 /*****************************************************************************/
