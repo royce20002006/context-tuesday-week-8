@@ -9,7 +9,7 @@ class Dog {
 	}
 
 	changeName(newName) {
-		this.name = newName;
+		return this.name = newName;
 	}
 
 	speak(word) {
